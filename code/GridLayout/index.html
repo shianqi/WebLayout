@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grid布局</title>
+</head>
+<body>
+<style>
+	*{
+		margin: 0;
+		border: 0;
+		padding: 0;
+	}
+	.title{
+		display: grid;
+		grid-template-columns: 70px auto 70px;
+		grid-template-rows: 70px;
+		background: #00c3ff;
+	}
+	.left{
+		grid-column: 1;
+		grid-row: 1;
+		display: -webkit-grid;
+		grid-template-columns: 5px 70px;
+		grid-template-rows: auto 40px auto;
+	}
+	.left-item{
+		width: 40px;
+		height: 40px;
+		grid-column: 2;
+		grid-row: 2;
+	}
+	.middle{
+		grid-column: 2;
+		grid-row: 1;
+		text-align: center;
+		line-height: 70px;
+		color: #ffffff;
+		font-size: 20px;
+	}
+	.right{
+		grid-column: 3;
+		grid-row: 1;
+		text-align: center;
+		line-height: 70px;
+		color: #ffffff;
+		font-size: 20px;
+	}
+</style>
+<div class="title">
+	<div class="left"><div class="left-item"><img src="../cat.jpg" alt="" width="40"></div></div>
+	<div class="middle">标题栏</div>
+	<div class="right">菜单</div>
+</div>
+</body>
+</html>

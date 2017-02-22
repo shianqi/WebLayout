@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>flex布局</title>
+</head>
+<body>
+<style>
+	*{
+		margin: 0;
+		border: 0;
+		padding: 0;
+	}
+	.title{
+		width: 100%;
+		height: 70px;
+		background: #00c3ff;
+
+		display: flex;
+		display: -webkit-flex;   
+		flex-direction: row;
+	}
+	.left{
+		flex-grow: 0;
+		width: 70px;
+		display: flex;
+		display: -webkit-flex;   
+		flex-direction: column;
+		justify-content: center;
+	}
+	.left img{
+		margin-left: 5px;
+	}
+	.middle{
+		flex-grow: 1;
+		text-align: center;
+		line-height: 70px;
+		color: #ffffff;
+		font-size: 20px;
+	}
+	.right{
+		width: 70px;
+		flex-grow: 0;
+		text-align: center;
+		line-height: 70px;
+		color: #ffffff;
+		font-size: 20px;
+	}
+</style>
+<div class="title">
+	<div class="left"><img src="../cat.jpg" alt="" width="40px;"></div>
+	<div class="middle">标题栏</div>
+	<div class="right">菜单</div>	
+</div>
+</body>
+</html>
